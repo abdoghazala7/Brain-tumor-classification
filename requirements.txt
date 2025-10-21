@@ -1,0 +1,18 @@
+# requirements.txt
+
+# Core Frameworks
+streamlit
+torch
+torchvision
+timm
+
+# Data Handling & Image Processing
+numpy
+pandas
+opencv-python-headless  # Headless version is better for servers
+Pillow
+
+# Machine Learning Utilities & Plotting
+scikit-learn
+matplotlib
+seaborn
