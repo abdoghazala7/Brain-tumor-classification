@@ -33,46 +33,31 @@ The gradual fine-tuning strategy proved superior, yielding a model that is both 
 | **AUC Score** | \~0.9950 | **\~0.9996** |
 | **Size (Parameters)** | \~135 Million | **\~5.3 Million** |
 
-### **Final Classification Report**
+### 🧾 Final Classification Report
 
-The final model demonstrates excellent precision and recall across all classes, especially the perfect recall for Meningioma.
+The final model demonstrates excellent precision and recall across all classes, especially the perfect recall for **Meningioma**.
 
-              precision    recall  f1-score   support
+| Class        | Precision | Recall | F1-Score | Support |
+|:--------------|:----------:|:-------:|:---------:|:---------:|
+| **pituitary** | 0.99 | 0.95 | 0.97 | 300 |
+| **notumor**   | 0.94 | 0.98 | 0.96 | 306 |
+| **meningioma**| 0.99 | 1.00 | 1.00 | 405 |
+| **glioma**    | 0.99 | 0.99 | 0.99 | 300 |
 
-   pituitary       0.99      0.95      0.97       300  
-     notumor       0.94      0.98      0.96       306  
-  meningioma       0.99      1.00      1.00       405  
-      glioma       0.99      0.99      0.99       300
+| Metric | Value | Samples |
+|:--------|:------:|:--------:|
+| **Accuracy** | 0.98 | 1311 |
+| **Macro Avg** | 0.98 | 1311 |
+| **Weighted Avg** | 0.98 | 1311 |
 
-    accuracy                           0.98      1311  
-   macro avg       0.98      0.98      0.98      1311  
-weighted avg       0.98      0.98      0.98      1311
+## 🛠️ Technology Stack
 
-## **🛠️ Technology Stack**
-
-* **Framework**: PyTorch  
-* **Pre-trained Models**: Timm (EfficientNetB0)  
-* **Deployment**: Streamlit, Streamlit Community Cloud  
-* **Data Handling**: NumPy, Pandas, OpenCV  
-* **Visualization**: Matplotlib, Seaborn  
-* **Utilities**: Scikit-learn
-
-## **🚀 Getting Started**
-
-1. **Clone the Repository:**  
-   git clone \[https://github.com/abdoghazala7/Brain-tumor-classification.git\](https://github.com/abdoghazala7/Brain-tumor-classification.git)  
-   cd Brain-tumor-classification
-
-2. Install Dependencies:  
-   It is recommended to create a virtual environment first.  
-   pip install \-r requirements.txt
-
-3. Download the Dataset:  
-   The dataset is available on Kaggle: Brain Tumor MRI Dataset.  
-4. **Run the Notebook or App:**  
-   * To explore the training process, open the .ipynb file in a Jupyter environment.  
-   * To run the web app locally, execute:  
-     streamlit run app.py
+- **Framework:** PyTorch  
+- **Pre-trained Models:** Timm (EfficientNetB0)  
+- **Deployment:** Streamlit, Streamlit Community Cloud  
+- **Data Handling:** NumPy, Pandas, OpenCV  
+- **Visualization:** Matplotlib, Seaborn  
+- **Utilities:** Scikit-learn
 
 ## **Final Model**
 
